@@ -14,7 +14,7 @@ export default function HOME(){
             <Link className="link btn btn-success" to={"/product"}>product</Link>
         </div>
         <div className="right">
-           <img src={`${process.env.PUBLIC_URL}/Shoes/Shoes.png`} alt=""/>
+           <img src={`${process.env.PUBLIC_URL}/Shoes/Shoes5.png`} alt=""/>
         </div>
     </div>
     </>
