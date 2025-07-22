@@ -13,9 +13,6 @@ export default function HOME(){
             <span>A shoe store that sells shoes in different colors</span>
             <Link className="link btn btn-success" to={"/product"}>product</Link>
         </div>
-        <div className="right">
-           <img src={`${process.env.PUBLIC_URL}/Shoes/Shoes5.png`} alt=""/>
-        </div>
     </div>
     </>
     );   

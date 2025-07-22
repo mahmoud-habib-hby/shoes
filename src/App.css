@@ -90,12 +90,13 @@ form{
     background-size: cover;
     height: 100vh;
     .left{
-        width: 30%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         height: 100%;
         gap: 20px;
         justify-content: center;
+        align-items: center;
         padding-left: 4%;
         button{
             width: fit-content;
@@ -105,15 +106,9 @@ form{
         font-size: 40px;
         font-family: fantasy;
     }
-    .right{
-        width: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        img{
-            width: 400px;
-        }
-    }
+    .link{
+    width: 30%;}
+
 }
 .products{
     display: flex;
@@ -262,18 +257,19 @@ span{
     background-size: cover;
     height: 100vh;
     .left{
-        width: 40%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         height: 100%;
         gap: 20px;
         justify-content: center;
+        align-items: center;
         padding-left: 4%;
         button{
             width: fit-content;
         }
         .link{
-            width: 70%;
+            width: 30%;
         }
         span{
             font-size: 100%;
@@ -283,15 +279,7 @@ span{
             font-family: fantasy;
         }
     }
-    .right{
-        width: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        img{
-            width: 400px;
-        }
-    }
+
 }
 }
 @media (max-width: 300px) {
@@ -304,18 +292,19 @@ span{
     background-size: cover;
     height: 100vh;
     .left{
-        width: 40%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         height: 100%;
         gap: 20px;
         justify-content: center;
+        align-items: center;
         padding-left: 4%;
         button{
             width: fit-content;
         }
         .link{
-            width: 100%;
+            width: 40%;
         }
         span{
             font-size:90%;
@@ -325,15 +314,7 @@ span{
             font-family: fantasy;
         }
     }
-    .right{
-        width: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        img{
-            width: 400px;
-        }
-    }
+
 }
 }
 @media (max-width: 550px) {
@@ -435,7 +416,7 @@ form{
     background-repeat: no-repeat;
     div{
         display: flex;
-        width: 70%;
+        width: 0%;
         flex-direction: column;
         align-items: start;
         justify-content: space-around;
