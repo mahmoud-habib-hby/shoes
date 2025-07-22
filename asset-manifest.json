@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/shoes/static/css/main.cd320f4a.css",
-    "main.js": "/shoes/static/js/main.a73df4ec.js",
+    "main.css": "/shoes/static/css/main.312419f1.css",
+    "main.js": "/shoes/static/js/main.25f2c5cc.js",
     "static/media/bg1.png": "/shoes/static/media/bg1.34a0104c2a12e713dfcf.png",
     "index.html": "/shoes/index.html",
-    "main.cd320f4a.css.map": "/shoes/static/css/main.cd320f4a.css.map",
-    "main.a73df4ec.js.map": "/shoes/static/js/main.a73df4ec.js.map"
+    "main.312419f1.css.map": "/shoes/static/css/main.312419f1.css.map",
+    "main.25f2c5cc.js.map": "/shoes/static/js/main.25f2c5cc.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd320f4a.css",
-    "static/js/main.a73df4ec.js"
+    "static/css/main.312419f1.css",
+    "static/js/main.25f2c5cc.js"
   ]
 }
