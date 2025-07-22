@@ -3,16 +3,16 @@ import { Text } from "./provider";
 import './App.css';
 
 export function BUY(){
-   const {val ,delet}=useContext(Text);
+   const {vall ,delet}=useContext(Text);
    let number=0;
    let element=0;
    const error = useRef(null);
 
-  val.map((e)=>{
+  vall.map((e)=>{
       number=Number(e.price)+number;
       element=element+1;
    })
-   let show=val.map((e)=>{
+   let show=vall.map((e)=>{
      return(
            <div className="product">
                 <span>{e.name}</span>
@@ -22,9 +22,9 @@ export function BUY(){
     );
    })
 function MONEY(){
-const {val,buy}=useContext(Text);
+const {vall,buy}=useContext(Text);
 let number=0;
-val.map((e)=>{
+vall.map((e)=>{
     number=number+Number(e.price);
 })
     return(

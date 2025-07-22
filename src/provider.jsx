@@ -5,7 +5,7 @@ export const Text = createContext();
 export function TextProvider({ children }) {
   const d=JSON.parse(localStorage.getItem("data"))
   const data=JSON.parse(localStorage.getItem("d"))
-  const [val,setVal]=useState(d?d:[]);
+  const [vall,setVal]=useState(d?d:[]);
  const [person,setperson]=useState(data?data:{});
  function Person(name,email){
       let data={
@@ -23,12 +23,12 @@ export function TextProvider({ children }) {
       price:price,
       id:Date.now()
     };
-    const va2=[...val,va];
+    const va2=[...vall,va];
     setVal(va2)
     localStorage.setItem("data",JSON.stringify(va2));
   }
   function delet(ide){
-    const data=val.filter((e)=>e.id!==ide);
+    const data=vall.filter((e)=>e.id!==ide);
     setVal(data)
     localStorage.setItem("data",JSON.stringify(data));
   }
@@ -39,7 +39,7 @@ export function TextProvider({ children }) {
     
   }
   return (
-    <Text.Provider value={{add,val,setVal ,delet ,person,Person,buy}}>
+    <Text.Provider value={{add,vall,setVal ,delet ,person,Person,buy}}>
       {children}
     </Text.Provider>
   ); 
