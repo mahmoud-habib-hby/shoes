@@ -131,6 +131,7 @@ form{
         button{
             width: 70%;
             border: none;
+            border: 1px rgb(50, 50, 255) solid;
         }
         border-radius: 20px;
         box-shadow: 0px 0px 19px 3px blue;
@@ -205,7 +206,7 @@ position:  static;
     padding: 10px 5px;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 40%;
     align-items: center;
     justify-content: center;
     height:fit-content;
@@ -217,7 +218,7 @@ position:  static;
     .money{
         display: flex;
         flex-direction: column;
-       gap: 5px;
+       gap: 10px;
        input{
        height: 80%;
        }
@@ -279,7 +280,7 @@ span{
             font-family: fantasy;
         }
     }
-
+    
 }
 }
 @media (max-width: 300px) {
@@ -318,6 +319,65 @@ span{
 }
 }
 @media (max-width: 550px) {
+.buy{
+
+position:  static;
+    display: flex;
+    flex-direction: column;
+    padding: 3% 5%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+   #button{
+    width: 40%;
+   }
+    .product{
+        width: 95%;
+        box-shadow: 0px 0px 19px 3px blue;
+        display: flex;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: space-around;
+        padding: 5px 0px;
+
+    }
+    .badge{
+    border-radius: 20px;
+    box-shadow: 0px 0px 19px 3px blue;
+    color: black;
+    background-color:#ffffff;
+    position: fixed;
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    align-items: center;
+    justify-content: center;
+    height:fit-content;
+    P{
+        overflow: hidden;
+        font-size: larger;
+        
+    }
+    .money{
+        display: flex;
+        flex-direction: column;
+       gap: 10px;
+       input{
+       height: 80%;
+       }
+    }
+    span{
+        width: 100%;
+        overflow: hidden;
+        text-align: left;
+    }
+}
+.display{
+    display: none;
+}
+}
 .div{
     display: flex;
     align-items: center;
@@ -377,6 +437,7 @@ form{
         button{
             width: 70%;
             border: none;
+            border: 1px rgb(50, 50, 255) solid;
         }
         border-radius: 20px;
         box-shadow: 0px 0px 19px 3px blue;
@@ -431,7 +492,7 @@ form{
         display: flex;
         flex-direction: column;
         width:80%;
-        margin: 20px;
+        margin: 20px auto;
         justify-content: center;
         padding: 10px 30px;
         gap: 10px;
@@ -443,6 +504,7 @@ form{
         button{
             width: 70%;
             border: none;
+            border: 1px rgb(50, 50, 255) solid;
         }
         border-radius: 20px;
         box-shadow: 0px 0px 19px 3px blue;
@@ -492,7 +554,7 @@ position:  static;
     .money{
         display: flex;
         flex-direction: column;
-       gap: 5px;
+       gap: 10px;
        input{
        height: 80%;
        }

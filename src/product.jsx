@@ -22,7 +22,7 @@ const { add} = useContext(Text);
                 <img src={`${process.env.PUBLIC_URL}${e.photo}`} alt=""/> 
                 <span>{e.name}</span>
                 <span>price :{e.price}$</span>
-                <button className="btn btn-primary" onClick={()=>{
+                <button type="button" className="btn btn-outline-primary blue" onClick={()=>{
                     add(e.name,e.price)
                     }
                     }>buy</button>
