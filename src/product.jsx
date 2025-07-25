@@ -25,7 +25,7 @@ const { add} = useContext(Text);
                 <button type="button" className="btn btn-outline-primary blue" onClick={()=>{
                     add(e.name,e.price)
                     }
-                    }>buy</button>
+                    }>add to chart</button>
             </div>
         );
         
