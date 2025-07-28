@@ -7,17 +7,17 @@ import PRODUCT from './product';
 import { TextProvider } from './provider';
 import NAV from './nav';
 import PERSON from './person';
+import Main from './main';
 
 function App() {
   const location = useLocation();
-  const hideNav = location.pathname === '/';
-   const home=useNavigate()
-   
-   return (
+
+  return (
     <TextProvider>
-      {!hideNav && <NAV />}
+      {location.pathname !== '/' && location.pathname !== '/log' && <NAV />}
       <Routes>
-        <Route path='/' element={<NewLog />} />
+        <Route path='/log' element={<NewLog />} />
+        <Route path='/' element={<Main />} />
         <Route path='/home' element={<HOME />} />
         <Route path='/product' element={<PRODUCT />} />
         <Route path='/buy' element={<BUY />} />

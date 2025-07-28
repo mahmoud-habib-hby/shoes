@@ -3,7 +3,6 @@
     box-sizing: border-box;
     padding: 0px;
     overflow-x: hidden;
-    text-transform: capitalize;
 }
 .div{
     display: flex;
@@ -11,7 +10,6 @@
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(#590d7c,#e22ac0);
     input{
         text-transform: lowercase;}
     .error{
@@ -29,7 +27,7 @@ form{
     padding-bottom: 20px;
     background-image: url(../public/bg1.png);
     background-color: white;
-    border-radius: 40px;
+    box-shadow: 0px 0px 18px 1px black;
     width: 90vw;
     height: fit-content;
     background-size: contain;
@@ -110,11 +108,16 @@ form{
     width: 30%;}
 
 }
+.progress{
+position: fixed;
+border-radius: 0px 0px 0px 0px !important;
+margin-top:5%;
+}
 .products{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 15% 0px;
+    padding: 10% 0px;
     .product{     
         display: flex;
         flex-direction: column;
@@ -162,28 +165,35 @@ form{
         div{
             display: flex;
             gap: 8px;
+            padding: 8px;
         }
         p{
+        
             font-size: larger;
             font-weight: 800;
             text-transform: capitalize;
         }
         img{
-            width: 20px;
+            width: 50px;
             cursor: pointer;
+            padding: 10px;
+            border-radius: 100%;
+            transition-duration: 0.1s;
         }
     }
 }
+.about .follow img:hover{
+    background-color: white;   
+}
 .buy{
-
-position:  static;
+width: 100vw;
     display: flex;
     flex-direction: column;
-    padding: 3% 5%;
-    height: 100vh;
+    padding:10% 5% ;
+    height: fit-content;
     align-items: center;
     justify-content: center;
-    gap: 5%;
+    gap: 20px;
    #button{
     width: 40%;
    }
@@ -197,6 +207,7 @@ position:  static;
         padding: 5px 0px;
 
     }
+    
     .badge{
     border-radius: 20px;
     box-shadow: 0px 0px 19px 3px blue;
@@ -234,20 +245,50 @@ position:  static;
 }
 }
 .n{
-padding: 80px;
 display: flex;
-P{
-    text-transform: lowercase;
-}
 align-items: center;
 justify-content: center;
-flex-direction: column;
-span{
-    font-size: 80px;
-    overflow: hidden;
+width: 100vw;
+height: 100vh;
+
+.right{
+    margin: 0px 5%;
+    width: 60%;
+    height: 35vh;
+    box-shadow:0px 0px 13px 0px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+    flex-direction: column;
+    button{
+        width: fit-content;
+        
+    }
 }
+.r{
+    display: flex;
+    align-items: center;
+    margin: 3px;
+    gap: 10px;
+    button{
+        border: none;
+        padding: 3px;
+        border-radius:4px;
+        background-color: initial;
+    }
+    h7{
+        font-size: larger;
+        
+    }
+    
 }
 
+}
+.n .r button:hover{
+    background-color:orange;
+}
 @media (max-width: 600px) {
  .home{
     display: flex;
@@ -318,22 +359,22 @@ span{
 
 }
 }
-@media (max-width: 550px) {
+@media (max-width: 580px) {
 .buy{
-
-position:  static;
+width: 100vw;
+position:  absolute;
     display: flex;
     flex-direction: column;
-    padding: 3% 5%;
-    height: 100vh;
+    padding:20% 5% ;
+    height: fit-content;
     align-items: center;
     justify-content: center;
-    gap: 5%;
+    gap: 20px;
    #button{
     width: 40%;
    }
     .product{
-        width: 95%;
+        width: 70%;
         box-shadow: 0px 0px 19px 3px blue;
         display: flex;
         border-radius: 10px;
@@ -342,6 +383,11 @@ position:  static;
         padding: 5px 0px;
 
     }
+    .center{
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    }
     .badge{
     border-radius: 20px;
     box-shadow: 0px 0px 19px 3px blue;
@@ -349,9 +395,10 @@ position:  static;
     background-color:#ffffff;
     position: fixed;
     padding: 10px 5px;
+    margin-left: -40PX;
     display: flex;
     flex-direction: column;
-    width: 75%;
+    width: 50%;
     align-items: center;
     justify-content: center;
     height:fit-content;
@@ -511,20 +558,20 @@ form{
     }
 }
 .buy{
-
-position:  static;
+width: 100vw;
+position:  absolute;
     display: flex;
     flex-direction: column;
-    padding: 3% 5%;
-    height: 100vh;
+    padding:20% 5% ;
+    height: fit-content;
     align-items: center;
     justify-content: center;
-    gap: 5%;
+    gap: 20px;
    #button{
     width: 40%;
    }
     .product{
-        width: 95%;
+        width: 70%;
         box-shadow: 0px 0px 19px 3px blue;
         display: flex;
         border-radius: 10px;
@@ -533,6 +580,11 @@ position:  static;
         padding: 5px 0px;
 
     }
+    .center{
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    }
     .badge{
     border-radius: 20px;
     box-shadow: 0px 0px 19px 3px blue;
@@ -540,9 +592,11 @@ position:  static;
     background-color:#ffffff;
     position: fixed;
     padding: 10px 5px;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    width: 75%;
+    margin-left: -50PX;
+    width: 60%;
     align-items: center;
     justify-content: center;
     height:fit-content;

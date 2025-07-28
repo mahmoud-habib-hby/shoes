@@ -1,9 +1,12 @@
 import "./App.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {  useRef } from "react";
 import { Link } from "react-router-dom";
+
 export default function NAV(){
+const x=useRef(null)
     return(
-        <div className="nav">
+        <div className="nav" ref={x} >
             <span className="Shoes">Shoes</span>
             <div className="middel">
                 <Link className="link" to={"/home"} >home</Link>

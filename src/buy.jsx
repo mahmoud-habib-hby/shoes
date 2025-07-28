@@ -1,6 +1,7 @@
 import { useContext, useRef } from "react";
 import { Text } from "./provider";
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export function BUY(){
    const {vall ,delet}=useContext(Text);
@@ -28,10 +29,11 @@ vall.map((e)=>{
     number=number+Number(e.price);
 })
     return(
-        <div ref={error} className="display">
+        <div  >
+         <div class="position-absolute top-50 start-50 translate-middle display" ref={error}>
        <span>
         <button className="btn btn-danger" onClick={()=>{
-         error.current.className="display"
+            error.current.className="display"
         }}>back</button>
         </span>
         <p>Checkout Page</p>
@@ -46,9 +48,10 @@ vall.map((e)=>{
             <input type="number" placeholder="CVV Code" className="form-control"/>
             <button class="btn btn-success"onClick={()=>
             buy()
-            }>buy</button>
+        }>buy</button>
         </div>
         </div>
+    </div>
     )
 }
     return(
