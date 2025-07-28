@@ -24,7 +24,7 @@ const home=useNavigate()
     return( 
         <>
        
-          <div class="position-absolute top-50 start-50 translate-middle"  style={{  boxShadow:" 0px 0px 13px 0px black",position:"fixed", background:"#ffff",width:"40vw",height:'30vh',overflow:"hidden", borderRadius:"40px",padding:"30px", display:name }} >
+          <div class="position position-absolute top-50 start-50 translate-middle"  style={{  boxShadow:" 0px 0px 13px 0px black",position:"fixed", background:"#ffff",width:"40vw",height:'30vh',overflow:"hidden", borderRadius:"40px",padding:"30px", display:name }} >
         <input  type="text" placeholder="change name" onChange={(e)=>setchangename(e.target.value)} value={changename} />
         <button class="btn btn-success"  style={{margin:"50px 0px"}} onClick={()=>{
         if(changename!==""){
@@ -33,7 +33,7 @@ const home=useNavigate()
         }
         }}>change</button>
           </div>
-         <div class="position-absolute top-50 start-50 translate-middle"  style={{  boxShadow:"0px 0px 13px 0px black ",position:"fixed", background:"#ffff",width:"40vw",height:'30vh',overflow:"hidden", borderRadius:"40px",padding:"30px", display:email  }}>
+         <div class="position position-absolute top-50 start-50 translate-middle"  style={{  boxShadow:"0px 0px 13px 0px black ",position:"fixed", background:"#ffff",width:"40vw",height:'30vh',overflow:"hidden", borderRadius:"40px",padding:"30px", display:email  }}>
         <input type="text" placeholder="change gmail"
         onChange={(e)=>setchangeemail(e.target.value)} />
         <button class="btn btn-success" style={{margin:"50px 0px"}} value={changeemail} 

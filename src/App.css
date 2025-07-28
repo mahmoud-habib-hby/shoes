@@ -360,6 +360,51 @@ height: 100vh;
 }
 }
 @media (max-width: 580px) {
+
+.position{
+    width: fit-content !important;
+}
+.n{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100vw;
+height: 100vh;
+
+.right{
+    margin: 0px 5%;
+    width: 90%;
+    height: 35vh;
+    box-shadow:0px 0px 13px 0px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+    flex-direction: column;
+    button{
+        width: fit-content;
+        
+    }
+}}
+.r{
+    display: flex;
+    align-items: center;
+    margin: 3px;
+    gap: 10px;
+    button{
+        border: none;
+        padding: 3px;
+        border-radius:4px;
+        background-color: initial;
+    }
+    h7{
+        font-size: larger;
+        
+    }
+    
+}
+
 .buy{
 width: 100vw;
 position:  absolute;
@@ -431,12 +476,12 @@ position:  absolute;
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(#590d7c,#e22ac0);
     input{
         text-transform: lowercase;}
     .error{
         display: none;
     }
+}
 }
 form{
     display: flex;
@@ -449,7 +494,7 @@ form{
     padding-bottom: 20px;
     background-image: url(../public/bg1.png);
     background-color: white;
-    border-radius: 40px;
+    box-shadow: 0px 0px 18px 1px black;
     width: 90vw;
     height: fit-content;
     background-size: contain;
@@ -457,7 +502,7 @@ form{
     background-repeat: no-repeat;
     div{
         display: flex;
-        width: 50%;
+        width: 30%;
         flex-direction: column;
         align-items: start;
         justify-content: space-around;
@@ -490,7 +535,7 @@ form{
         box-shadow: 0px 0px 19px 3px blue;
     }
 }
-}
+
 @media (max-width: 410px) {
 .div{
     display: flex;
@@ -498,12 +543,12 @@ form{
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(#590d7c,#e22ac0);
     input{
         text-transform: lowercase;}
     .error{
         display: none;
     }
+}
 }
 form{
     display: flex;
@@ -516,7 +561,7 @@ form{
     padding-bottom: 20px;
     background-image: url(../public/bg1.png);
     background-color: white;
-    border-radius: 40px;
+    box-shadow: 0px 0px 18px 1px black;
     width: 90vw;
     height: fit-content;
     background-size: contain;
@@ -524,7 +569,7 @@ form{
     background-repeat: no-repeat;
     div{
         display: flex;
-        width: 70%;
+        width: 30%;
         flex-direction: column;
         align-items: start;
         justify-content: space-around;
@@ -621,6 +666,5 @@ position:  absolute;
 }
 .display{
     display: none;
-}
 }
 }
