@@ -41,7 +41,7 @@ function click(){
     )
     return(
     <>
-<div class="alert alert-success" style={{display:alert,  position:"fixed", width:"100%"}} role="alert">
+<div class="alert alert-success" style={{display:alert, zIndex:"5", position:"fixed", width:"100%"}} role="alert">
  DONE 
 </div>
     <div className="products">
